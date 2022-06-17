@@ -36,7 +36,20 @@ function uppercaseCharacter() {
 }
 
 function generatePassword() {
+
+  var smallAlphabet = "abcdefghijklmnopqrstuvwxyz"
+  var bigAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var specialChar = "!@#$%^&*()" 
+  var numero = "0123456789"
+  console.log(smallAlphabet);
+  console.log(bigAlphabet);
+  console.log(specialChar);
+  console.log(numero);
+
   console.log("Hey! You clicked the button!")
+
+
+
 
   return "Generated password will go here"
 }
