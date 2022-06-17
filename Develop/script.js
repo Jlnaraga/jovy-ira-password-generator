@@ -45,8 +45,27 @@ function generatePassword() {
   console.log(bigAlphabet);
   console.log(specialChar);
   console.log(numero);
-
   console.log("Hey! You clicked the button!")
+
+  var characters = "" 
+  if (withspecialCharacter) {
+  characters += specialChar
+  }
+
+  if (withnumericCharacter) {
+    characters += numero
+  }
+
+  if (withlowercaseCharacter) {
+    characters += smallAlphabet
+  }
+
+  if (withuppercaseCharacter) {
+    characters += bigAlphabet
+  }   
+  
+
+
 
 
 
