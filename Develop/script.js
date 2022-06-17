@@ -62,15 +62,16 @@ function generatePassword() {
 
   if (withuppercaseCharacter) {
     characters += bigAlphabet
-  }   
+  }
   
+  let password = "";
+  for (let i = 0; i < passwordLength; i++) {
+    password += characters.charAt(
+      Math.floor(Math.random () * characters.length)
+    );
+  }
 
-
-
-
-
-
-  return "Generated password will go here"
+  return password; "Generated password will go here"
 }
 
 
