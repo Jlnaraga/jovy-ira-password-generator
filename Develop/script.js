@@ -1,10 +1,21 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var passwordLength = 0;
+var withspecialCharacter = false;
+var withnumericCharacter = false;
+var withlowercaseCharacter = false;
+var withuppercaseCharacter = false;
+
+function generatePassword() {
+  console.log("Hey! You clicked the button!")
+
+  return "Generated password will go here"
+}
 
 
 // Write password to the #password input
-function writePassword("0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";) {
-  var passwordlength = 8;
+function writePassword() {
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -14,4 +25,3 @@ function writePassword("0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJ
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-git add .
