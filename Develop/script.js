@@ -6,9 +6,28 @@ var withnumericCharacter = false;
 var withlowercaseCharacter = false;
 var withuppercaseCharacter = false;
 
-function passwordLength() {
-  passwordLength = prompt("How many characters would you like your password to contain?");
+function getPasswordLength() {
+
+  passwordLength = 0;
+  let isValid = false;
+
+  while(isValid === false) {
+    passwordLength = prompt("How many characters would you like your password to contain?");
+
+    if(!passwordLength) {
+      alert("Invalid input")
+    }
+    else if((passwordLength < 8) || (passwordLength > 120)) {
+      alert("at least 8 characters and no more than 128 characters")
+    }
+    else {
+      isValid = true;
+    }
+    
+  }
+
   console.log(passwordLength);
+
 }
 
 function specialCharacter() {
@@ -77,7 +96,7 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  passwordLength()
+  getPasswordLength()
   specialCharacter()
   numericCharacter()
   lowercaseCharacter()
